@@ -1,1 +1,2 @@
+# List of HLTV events, where each line contains an HLTV event ID
 6865 # IEM Sydney 2023
