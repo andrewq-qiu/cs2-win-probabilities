@@ -15,6 +15,9 @@ import undetected_chromedriver as uc
 from bs4 import BeautifulSoup
 from selenium import webdriver
 
+from util import parse_txt_file_list
+
+
 # Set up logging
 logging.basicConfig(level=logging.INFO,
                     format='%(asctime)s - %(levelname)s - %(message)s')
@@ -218,22 +221,6 @@ def download(browser: webdriver.Chrome, events: list[str], maps: list[str], outp
                 
         for match_url in match_urls:
             download_demo_zip(browser, match_url, maps, output_path)                
-        
-def parse_txt_file_list(filename: str) -> list[str]:
-    """Read filename and return a list of each row, ignoring comments deliminated by #"""
-    
-    lst = []
-    
-    with open(filename, 'r') as f:
-        for row in f:
-            pound_loc = row.find('#')
-            
-            if pound_loc == -1:
-                lst.append(row)
-            elif pound_loc > 0: # Comment not first character
-                lst.append(row[:pound_loc])
-                
-    return lst
         
         
 if __name__ == '__main__':
