@@ -59,7 +59,9 @@ pip install -r requirements.txt
 
 A SQL database file containing the final processed data can be retrieved here: [TODO](). Alternatively, you can scrape raw data from HLTV and process it via a sequence of scripts.
 
-To download the demos used, 
+The scraping code uses Selenium, which requires a [chrome driver installation](https://chromedriver.chromium.org/downloads).
+
+To download the demos used, edit `scripts/download_demos.sh` and run:
 
 ```
 chmod u+x scripts/download_demos.sh
