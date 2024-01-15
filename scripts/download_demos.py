@@ -1,4 +1,4 @@
-"""Download all CS2 demo files for a subset of maps at a list of HLTV events.
+"""Download CS2 demo zips for a subset of maps at a list of HLTV events.
 
 Arguments:
     --events-path: Path to a .txt file where each line contains an HLTV event ID, ignoring comments prefixed by #
