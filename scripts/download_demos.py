@@ -3,7 +3,7 @@
 Arguments:
     --events-path: Path to a .txt file where each line contains an HLTV event ID, ignoring comments prefixed by #
     --maps-path: Path to a .txt file where each line contains a map name. Represents the subset of maps to download
-    --output-path: Directory to store demos in
+    --output-path: Directory to store demo zips in
     --chrome-bin: Path to a chrome binary for use with selenium
 """
 
