@@ -177,10 +177,10 @@ def download_demo_zip(browser: webdriver.Chrome, match_url: str, maps: list[str]
     one map in maps. Return whether a download was successfully downloaded.
     
     Args:
-        browser: the selenium browser to use to make requests
-        match_url: the url of the HLTV match
-        maps: a list of map names
-        output_path: directory to download files to
+        - browser: the selenium browser to use to make requests
+        - match_url: the url of the HLTV match
+        - maps: a list of map names
+        - output_path: directory to download files to
     """
     
     browser.get(match_url)
@@ -207,10 +207,10 @@ def download(browser: webdriver.Chrome, events: list[str], maps: list[str], outp
     """Download all CS2 demo files for a subset of maps at a list of HLTV events.
     
     Args:
-        browser: the selenium browser to use to make requests
-        events: A list of HLTV event ids
-        maps: A list of map names
-        output_path: The output path to store the demo files
+        - browser: the selenium browser to use to make requests
+        - events: A list of HLTV event ids
+        - maps: A list of map names
+        - output_path: The output path to store the demo files
     """
     
     for event in events:
