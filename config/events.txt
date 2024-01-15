@@ -1,2 +1,6 @@
 # List of HLTV events, where each line contains an HLTV event ID
-6865 # IEM Sydney 2023
+6863 # ESL Pro League Season 18
+6976 # Blast Premier World Final 2023
+7499 # BetBoom Dacha 2023
+7250 # Elisa Masters Espoo 2023
+7365 # CS Asia Championships 2023

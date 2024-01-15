@@ -217,7 +217,7 @@ def download(browser: webdriver.Chrome, events: list[str], maps: list[str], outp
         logging.info(f"Downloading demos for {event}") 
         
         for match_url in match_urls:
-            download_demo_zip(browser, match_url, output_path)
+            download_demo_zip(browser, match_url, maps, output_path)
                 
         
 def parse_txt_file_list(filename: str) -> list[str]:
