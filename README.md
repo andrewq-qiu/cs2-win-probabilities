@@ -59,11 +59,22 @@ pip install -r requirements.txt
 
 A SQL database file containing the final processed data can be retrieved here: [TODO](). Alternatively, you can scrape raw data from HLTV and process it via a sequence of scripts.
 
-The scraping code uses Selenium, which requires a [chrome driver installation](https://chromedriver.chromium.org/downloads).
+##### Requirements:
 
-To download the demos used, edit `scripts/download_demos.sh` and run:
+1. The scraping code uses Selenium, which requires a [chrome driver installation](https://chromedriver.chromium.org/downloads).
+2. The unzipping/unraring code uses [p7zip](https://p7zip.sourceforge.net/). HLTV uses .rar files, so the .rar extension is required.
+
+To download the demos used, edit the chrome binary path in `scripts/download_demos.sh` and run:
 
 ```
 chmod u+x scripts/download_demos.sh
 scripts/download_demos.sh
 ```
+
+To unrar the downloaded demos, run:
+
+```
+chmod u+x scripts/unrar.sh
+scripts/unrar.sh
+```
+
