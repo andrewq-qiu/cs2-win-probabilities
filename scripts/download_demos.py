@@ -24,7 +24,7 @@ HLTV_BASE = 'https://www.hltv.org'
 HLTV_EVENTS_MATCH_LIST_URL = 'https://www.hltv.org/results?event={}'
 
 # Download parameters
-DOWNLOAD_TIMEOUT = 1000 # Number of seconds before timing out a download
+DOWNLOAD_TIMEOUT = 10000 # Number of seconds before timing out a download
 DOWNLOAD_COMPLETION_CHECK_PERIOD = 5 # Number of seconds between each check for download completio
 
 
@@ -214,11 +214,10 @@ def download(browser: webdriver.Chrome, events: list[str], maps: list[str], outp
         logging.info(f"Retrieving match list for {event}")
         match_urls = get_matches_urls(browser, event)
         
-        logging.info(f"Downloading demos for {event}") 
-        
-        for match_url in match_urls:
-            download_demo_zip(browser, match_url, maps, output_path)
+        logging.info(f"Downloading demos for {event}")
                 
+        for match_url in match_urls:
+            download_demo_zip(browser, match_url, maps, output_path)                
         
 def parse_txt_file_list(filename: str) -> list[str]:
     """Read filename and return a list of each row, ignoring comments deliminated by #"""

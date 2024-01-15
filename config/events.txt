@@ -4,3 +4,5 @@
 7499 # BetBoom Dacha 2023
 7250 # Elisa Masters Espoo 2023
 7365 # CS Asia Championships 2023
+6975 # Blast Fall Final 2023
+6865 # IEM Sydney 2023
