@@ -1,9 +1,9 @@
-"""Download CS2 demo zips for a subset of maps at a list of HLTV events.
+"""Download CS2 demo rars for a subset of maps at a list of HLTV events.
 
 Arguments:
     --events-path: Path to a .txt file where each line contains an HLTV event ID, ignoring comments prefixed by #
     --maps-path: Path to a .txt file where each line contains a map name. Represents the subset of maps to download
-    --output-path: Directory to store demo zips in
+    --output-path: Directory to store demo rars in
     --chrome-bin: Path to a chrome binary for use with selenium
 """
 
