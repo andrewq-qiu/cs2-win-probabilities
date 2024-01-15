@@ -24,15 +24,11 @@ My project focuses on a critical aspect of CS2 gameplay: decision-making in the 
 
 My project attempts to uncover the optimal choice by modelling the win probability of a round, given its current state (player health, positions, weaponry, and state of the objective). This has applications in CS2 gameplay analytics and live broadcasting. Notably, Blast.tv provides a [similar](https://blast.tv/article/blast-fall-final-2023-innovations) tool which displays win probabilities during a match's broadcast. This project also provides significant steps towards building an open-source version of such a tool.
 
-##### My Project: A Digital Twist
-
-This project provides a digital twist to White Elephant- wrapping, opening, and swapping are implemented online via a webapp. The content of gifts are CS2 items. Imagine the excitement of unwrapping a rare weapon skin or trading it for an agent you've had your eye on!
-
 ## Technologies
 
 <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white"> 
 
-Libraries: Pytorch, Numpy, Jupyter, Selenium, BeautifulSoup
+**Libraries:** Pytorch, Numpy, Jupyter, Selenium, BeautifulSoup
 
 ## Motivation and Learning Outcomes
 
